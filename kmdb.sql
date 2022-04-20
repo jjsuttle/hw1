@@ -201,6 +201,14 @@ VALUES (
   "1"
 );
 
+INSERT INTO studios (
+  studio_name
+)
+VALUES (
+"Warner Bros."
+);
 
-SELECT id, title, year, mpaa_rating, studio_id
-FROM movies;
+
+SELECT movies.id, movies.title, movies.year, movies.mpaa_rating, studios.studio_name
+FROM movies INNER JOIN studios ON movies.studio_id = studios.id;
+
