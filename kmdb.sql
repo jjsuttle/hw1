@@ -149,8 +149,7 @@ CREATE TABLE studios (
 
 CREATE TABLE cast (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  first_name TEXT,
-  last_name TEXT,
+  cast_name TEXT,
   actor_id INTEGER,
   movie_id INTEGER
 ); 
@@ -209,6 +208,146 @@ VALUES (
 );
 
 
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Christian"	,
+	"Bale"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Michael"	,
+	"Caine"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Liam"	,
+	"Neeson"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Katie"	,
+	"Holmes"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Gary"	,
+	"Oldman"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Christian"	,
+	"Bale"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Heath"	,
+	"Ledger"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Aaron"	,
+	"Eckhart"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Michael"	,
+	"Caine"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Maggie"	,
+	"Gyllenhaal"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Christian"	,
+	"Bale"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Gary"	,
+	"Oldman"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Tom"	,
+	"Hardy"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Joseph"	,
+	"Gordon-Levitt"	
+);		
+		
+INSERT INTO	actors	(
+	first_name,	
+	last_name	
+)		
+VALUES	(	
+	"Anne"	,
+	"Hathaway"	
+);			
+
+
+
 SELECT movies.id, movies.title, movies.year, movies.mpaa_rating, studios.studio_name
 FROM movies INNER JOIN studios ON movies.studio_id = studios.id;
+
+SELECT first_name, last_name
+FROM actors;
 
