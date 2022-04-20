@@ -138,20 +138,21 @@ CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT,
   year INTEGER,
-  mpaa_rating INTEGER,
+  mpaa_rating TEXT,
   studio_id INTEGER
 ); 
 
 CREATE TABLE studios (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT
+  studio_name TEXT
 ); 
 
 CREATE TABLE cast (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   first_name TEXT,
   last_name TEXT,
-  actor_id
+  actor_id INTEGER,
+  movie_id INTEGER
 ); 
 
 CREATE TABLE actors (
@@ -159,3 +160,47 @@ CREATE TABLE actors (
   first_name TEXT,
   last_name TEXT
 ); 
+
+
+INSERT INTO movies (
+  title,
+  year,
+  mpaa_rating,
+  studio_id
+)
+VALUES (
+  "Batman Begins",
+  "2005",
+  "PG-13",
+  "1"
+);
+
+INSERT INTO movies (
+  title,
+  year,
+  mpaa_rating,
+  studio_id
+)
+VALUES (
+  "The Dark Knight",
+  "2008",
+  "PG-13",
+  "1"
+);
+
+INSERT INTO movies (
+  title,
+  year,
+  mpaa_rating,
+  studio_id
+)
+VALUES (
+  "The Dark Knight Rises",
+  "2012",
+  "PG-13",
+  "1"
+);
+
+
+SELECT id, title, year, mpaa_rating, studio_id
+FROM movies;
