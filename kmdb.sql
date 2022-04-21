@@ -252,15 +252,7 @@ VALUES	(
 	"Gary"	,
 	"Oldman"	
 );		
-		
-INSERT INTO	actors	(
-	first_name,	
-	last_name	
-)		
-VALUES	(	
-	"Christian"	,
-	"Bale"	
-);		
+			
 		
 INSERT INTO	actors	(
 	first_name,	
@@ -279,15 +271,7 @@ VALUES	(
 	"Aaron"	,
 	"Eckhart"	
 );		
-		
-INSERT INTO	actors	(
-	first_name,	
-	last_name	
-)		
-VALUES	(	
-	"Michael"	,
-	"Caine"	
-);		
+			
 		
 INSERT INTO	actors	(
 	first_name,	
@@ -297,24 +281,8 @@ VALUES	(
 	"Maggie"	,
 	"Gyllenhaal"	
 );		
-		
-INSERT INTO	actors	(
-	first_name,	
-	last_name	
-)		
-VALUES	(	
-	"Christian"	,
-	"Bale"	
-);		
-		
-INSERT INTO	actors	(
-	first_name,	
-	last_name	
-)		
-VALUES	(	
-	"Gary"	,
-	"Oldman"	
-);		
+			
+	
 		
 INSERT INTO	actors	(
 	first_name,	
@@ -343,11 +311,177 @@ VALUES	(
 	"Hathaway"	
 );			
 
-
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Bruce Wayne"	,
+	"1"	,
+	"1"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Alfred"	,
+	"2"	,
+	"1"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Ra's Al Ghul"	,
+	"3"	,
+	"1"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Rachel Dawes"	,
+	"4"	,
+	"1"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Commissioner Gordon"	,
+	"5"	,
+	"1"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Bruce Wayne"	,
+	"1"	,
+	"2"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Joker"	,
+	"6"	,
+	"2"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Harvey Dent"	,
+	"7"	,
+	"2"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Alfred"	,
+	"2"	,
+	"2"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Rachel Dawes"	,
+	"8"	,
+	"2"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Bruce Wayne"	,
+	"1"	,
+	"3"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Commissioner Gordon"	,
+	"5"	,
+	"3"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Bane"	,
+	"9"	,
+	"3"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"John Blake"	,
+	"10"	,
+	"3"	
+);		
+		
+INSERT INTO cast (		
+	cast_name,	
+	actor_id,	
+	movie_id	
+)		
+VALUES(		
+	"Selina Kyle"	,
+	"11"	,
+	"3"	
+);		
 
 SELECT movies.id, movies.title, movies.year, movies.mpaa_rating, studios.studio_name
 FROM movies INNER JOIN studios ON movies.studio_id = studios.id;
 
 SELECT first_name, last_name
 FROM actors;
+
+SELECT id, cast_name, actor_id,movie_id
+FROM cast;
 
