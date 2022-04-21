@@ -198,28 +198,22 @@ VALUES("Bruce Wayne",1,1),
 ("John Blake",10,3),
 ("Selina Kyle",11,3);
 	
-
---------------------------------
+.print "Movies"
+.print "======"
+.print ""
 
 SELECT movies.id, movies.title, movies.year, movies.mpaa_rating, studios.studio_name
 FROM movies INNER JOIN studios ON movies.studio_id = studios.id;
 
---------------------------------
-
-SELECT id, actor_name
-FROM actors;
-
---------------------------------
-
-SELECT id, cast_name, actor_id,movie_id
-FROM cast_members;
-
---------------------------------
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
 
 SELECT	movies.title, actors.actor_name, cast_members.cast_name
 FROM cast_members
 	INNER JOIN movies ON movies.id = cast_members.movie_id
 	INNER JOIN actors ON actors.id = cast_members.actor_id; 
 
---------------------------------
+
 
