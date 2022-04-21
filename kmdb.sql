@@ -485,3 +485,7 @@ FROM actors;
 SELECT id, cast_name, actor_id,movie_id
 FROM cast;
 
+SELECT movies.title, actors.first_name, actors.last_name, cast.cast_name
+FROM cast 
+	INNER JOIN movies ON cast.movie_id = movies.id
+	INNER JOIN actors on cast.actor_id = actors.id;
